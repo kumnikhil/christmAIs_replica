@@ -13,7 +13,8 @@ RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 
 # Install dev dependencies
-COPY requirements-dev.txt /usr/src/app/
+COPY . /usr.src/app
+#COPY requirements-dev.txt /usr/src/app/
 RUN pip install -r requirements-dev.txt
 
 # Download checkpoint directory
